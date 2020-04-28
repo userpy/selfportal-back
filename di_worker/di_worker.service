@@ -1,0 +1,17 @@
+[Unit]
+Description=Celery Service
+After=network.target
+
+[Service]
+Type=simple
+User=zbxsup
+Group=zbxsup
+PIDFile=/tmp/di_worker.pid
+WorkingDirectory=/home/zbxsup/selfportal-back
+ExecStart=/home/zbxsup/selfportal-back/venv/bin/python3.6 /home/zbxsup/selfportal-back/di_worker/di_worker.py
+ExecStop=/bin/kill -SIGKILL $MAINPID
+TimeoutSec=60
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
