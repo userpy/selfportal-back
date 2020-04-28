@@ -36,7 +36,7 @@ PyJWT==1.7.1
 PyMySQL==0.9.2
 python-dateutil==2.7.5
 python-dotenv==0.9.1
-python-engineio==3.2.1
+python-engineio==3.8.2.post1
 python-ldap==3.1.0
 python-socketio==2.1.0
 pytz==2018.7
