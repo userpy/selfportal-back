@@ -15,7 +15,7 @@ celery-once==2.0.0
 certifi==2018.11.29
 cffi==1.11.5
 chardet==3.0.4
-cryptography==2.4.2
+cryptography==3.2
 cx-Oracle==7.0.0
 hiredis==0.3.0
 idna==2.8
